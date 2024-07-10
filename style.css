@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'namir';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('font/namir.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'n99';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('font/namir.ttf') format('truetype');
+}
+
+html {
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font: normal 24px/1.4 namir, n99, system-ui, sans-serif, Ari;
+	margin: 0;
+	display: flex;
+	color: hsl(140, 7%, 80%);
+	background-color: #121212;
+}
+
+::selection {
+	background: #ff0;
+	color: hsl(240, 22%, 7%);
+}
+
+a {
+	color: #ff0;
+	text-decoration-thickness: from-font;
+}
+
+a:hover,
+a:focus {
+	color: #FFF;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+main {
+	margin: auto;
+	padding: 30px;
+}
+
+main h1 {
+	font-size: 80px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 1;
+	color: #333;
+}
+
+main h2 {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	color: #ff0;
+}
+
+main p {
+	margin: 0;
+	margin-top: 30px;
+}
+
+.link + .link {
+	margin-top: 10px;
+}
+
+.link svg {
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.music {
+	margin-top: 40px;
+	font-size: 15px;
+	padding: 7px 15px;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 6px;
+	color: hsl(140, 7%, 80%);
+	background-color: rgba(255, 255, 255, .05);
+}
+
+.music:hover,
+.music:focus {
+	background-color: hsl(240, 22%, 7%);
+	text-decoration: underline;
+}
+
+.music span {
+	text-decoration: underline;
+}
+
+.music svg {
+	fill: currentColor;
+	vertical-align: bottom;
+	margin-right: 7px;
+}
+
+.music a:not(:hover) {
+	color: inherit;
+}
+
+@media (max-width: 600px) {
+	main h1 {
+		font-size: 40px;
+	}
+}
